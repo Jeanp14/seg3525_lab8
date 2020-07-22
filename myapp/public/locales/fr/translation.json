@@ -1,0 +1,10 @@
+{
+    "title": "Bienvenu a react",
+    "description":{
+        "part1": "Bienvenu à Ottawa-center Soccer Club!",
+        "part2": "Adresse: 123 Bank St, Ottawa, ON K1K 2K2",
+        "part3": "Heures de bureau:",
+        "part4": "Semaine: 11:00 - 17:00",
+        "part5": "Fins de semaine: Fermé"
+    }
+}

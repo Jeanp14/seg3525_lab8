@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Dropdown, Form } from 'react-bootstrap';
+import { Button, Form } from 'react-bootstrap';
 import Navbar from './components/Navbar';
 import {BrowserRouter, Route} from 'react-router-dom';
 import Home from './components/Home';
@@ -10,11 +10,17 @@ import U18 from './components/U18';
 import Adults from './components/Adults';
 import Seniors from './components/Seniors';
 import Register from './components/Register';
+import {Trans, useTranslation} from 'react-i18next';
 
 
-class App extends Component {
-  render() {
+function App() {
+  const {t, i18n} = useTranslation()
+  const changeLanguage = (language) =>{
+    i18n.changeLanguage(language)
+  }
+  
     return (
+     
       <BrowserRouter>
         <div className="App">
           <Navbar/>
@@ -29,29 +35,8 @@ class App extends Component {
         </div>
       </BrowserRouter>
     );
-  }
-  /* state = {
-    todos: [
-      {id: 1, content: 'buy some milk'},
-      {id: 2, content: 'play mario kart'}
-    ]
-  }
-  deleteTodo = (id) => {
-    const todos = this.state.todos.filter(todo => {
-      return todo.id !== id
-    });
-    this.setState({
-      todos
-    });
-  }
-  render() {
-    return (
-      <div className="todo-app container">
-        <h1 className="center blue-text">Todo's</h1>
-        <Todos todos={this.state.todos} deleteTodo={this.deleteTodo} />
-      </div>
-    );
-  } */
+  
+  
 }
 
 export default App;
