@@ -15,7 +15,7 @@ const Coaches = () =>{
                 <div className="card">
                     <img className="card-img-top" src={c1} alt="Card image"/>
                     <div className="card-body">
-                        <h4 className="card-title">David Gomez</h4>
+                        <h4 className="card-title">Mikel</h4>
                         <p className="card-text">Coach for competitive teams</p>
                     </div>
                 </div>
@@ -24,7 +24,7 @@ const Coaches = () =>{
                 <div className="card">
                     <img className="card-img-top" src={c2} alt="Card image"/>
                     <div className="card-body">
-                    <h4 className="card-title">Carlo Florensi</h4>
+                    <h4 className="card-title">Pep</h4>
                     <p className="card-text">Coach for recreational teams</p>
                     </div>
                 </div>
@@ -33,7 +33,7 @@ const Coaches = () =>{
                 <div className="card">
                     <img className="card-img-top" src={c4} alt="Card image"/>
                     <div className="card-body">
-                    <h4 className="card-title">Mark Stewart</h4>
+                    <h4 className="card-title">Jose</h4>
                     <p className="card-text">Coach for seniors teams</p>
                     </div>
                 </div>
